@@ -4,7 +4,7 @@ From
 
 + [Coursera](https://www.coursera.org/)
 
-![Coursera](images/coursera.png)
+![Coursera](./images/coursera.png)
 
 + Stanford
 
@@ -16,17 +16,14 @@ From
 
 [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
 
-# Supervised Machine Learning: Regression and Classification
+## Supervised Machine Learning: Regression and Classification
 
 [Supervised Machine Learning](./Course1/SupervisedMachineLearning.md)
 
-
-# Advanced Learning Algorithms
-
+## Advanced Learning Algorithms
 
 [Advanced Learning Algorithms](./Course2/AdvancedLearningAlgorithms.md)
 
-
-# Unsupervised Learning, Recommenders, Reinforcement Learning
+## Unsupervised Learning, Recommenders, Reinforcement Learning
 
 [Unsupervised Learning, Recommenders, Reinforcement Learning](./Course3/UnsupervisedLearning-Recommenders-ReinforcementLearning.md)
