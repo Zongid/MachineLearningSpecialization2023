@@ -796,6 +796,7 @@ My Answer: False $\checkmark[ChatGPT]$
 ![](./images/Pasted%20image%2020230918205529.png)
 
 **Squared error cost**
+
 $$
 J(\vec{w},b)=\dfrac{1}{m}\sum_{i=1}^{m}\dfrac{1}{2}(f_{\vec{w},b}(\vec{x}^{(i)})-y^{(i)})^{2}
 $$
