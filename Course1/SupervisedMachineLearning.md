@@ -1011,12 +1011,14 @@ How to get the derivative term (optional)
 
 > [!question] Quiz
 > Recall the gradient descent algorithm utilizes the gradient calculation:
+> 
 > $$\begin{aligned}
 > \text{repeat until convergence: \{} \\
 > w_{j}=w_{j}-\alpha\Bigg[\frac{1}{m}\sum_{i=1}^{m}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)})x_{j}^{(i)}+\frac{\lambda}{m}w_{j}\Bigg]& \mathrm{for~j=1..n}  \\
 > b=b-\alpha\frac{1}{m}\sum_{i=0}^{m-1}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}) \\
 > \}
 > \end{aligned}$$
+> 
 > Where each iteration performs simultaneous updates on $w_j$​ for all $j$.
 > 
 > In lecture, this was rearranged to emphasize the impact of regularization:
