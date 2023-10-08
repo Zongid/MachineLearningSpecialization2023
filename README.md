@@ -18,12 +18,12 @@ From
 
 ## Supervised Machine Learning: Regression and Classification
 
-[Supervised Machine Learning](./Course1/SupervisedMachineLearning.md)
+Notes: [Supervised Machine Learning](./Course1/SupervisedMachineLearning.md)
 
 ## Advanced Learning Algorithms
 
-[Advanced Learning Algorithms](./Course2/AdvancedLearningAlgorithms.md)
+Notes: [Advanced Learning Algorithms](./Course2/AdvancedLearningAlgorithms.md)
 
 ## Unsupervised Learning, Recommenders, Reinforcement Learning
 
-[Unsupervised Learning, Recommenders, Reinforcement Learning](./Course3/UnsupervisedLearning-Recommenders-ReinforcementLearning.md)
+Notes: [Unsupervised Learning, Recommenders, Reinforcement Learning](./Course3/UnsupervisedLearning-Recommenders-ReinforcementLearning.md)
