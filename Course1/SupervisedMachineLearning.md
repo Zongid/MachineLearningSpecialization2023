@@ -1,4 +1,18 @@
-Supervised Machine Learning
+---
+aliases: 
+author: Li Yaozong
+date: 2023-09-11
+time: 2023-09-11 15:33
+cover: https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/9c/90ae67ecdb4185a4ae79ec9a5ae0b6/Course-Logo--1.png
+description: "Supervised Machine Learning: Regression and Classification"
+source: Coursera
+status: Completed
+tags:
+  - cs
+  - MachineLearing
+  - notes
+url: https://www.coursera.org/learn/machine-learning/home/welcome
+---
 
 ![cover](https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/9c/90ae67ecdb4185a4ae79ec9a5ae0b6/Course-Logo--1.png)
 
@@ -28,7 +42,6 @@ Learning Objectives
 > + ==Would have made it worse==$\checkmark$
 
 Machine learning algorithms
-
 - Supervised learning
 - Unsupervised learning
 - Recommender systems
@@ -82,6 +95,13 @@ Unsupervised learning
 ---
 ***Jupyter Notebooks***
 
+[Jupyter Notebooks](W1/C1_W1_Lab01_Python_Jupyter_Soln.ipynb)
+
+## Practice Quiz: Supervised vs unsupervised learning
+
+
+
+
 ## Regression Model
 
 ***Linear regression model***
@@ -102,9 +122,7 @@ Unsupervised learning
 ___
 ***Optionallab: Model representation***
 
-
-> [!hint] Code
-> `E:\Github\Zcode\Li\Notes\MachineLearning\ModelRepresentation.ipynb`
+[Model representation](W1/C1_W1_Lab02_Model_Representation_Soln.ipynb)
 
 ***
 ***Cost function formula***
@@ -186,8 +204,41 @@ ___
 ___
 ***Optionallab: Cost function***
 
-> [!hint] Code
-> E:\Github\Zcode\Li\Notes\MachineLearning\CostFunction.ipynb
+[Cost function](W1/C1_W1_Lab03_Cost_function_Soln.ipynb)
+
+## Practice Quiz: Regression Model
+
+1.   For linear regression, the model is $f_{w,b}(x)=wx+b$.
+
+Which of the following are the inputs, or features, that are fed into the model and with which the model is expected to make a prediction?
+
++ A. x
++ B. w and b.
++ C. m
++ D. (x,y)
+
+My Answer: D ×
+
+> [!failure] Incorrect
+> Although $x$ are the input features, $y$ are the labels. The model does not use the labels to make its predictions.
+
+A. $x$
+
+> [!check] Correct
+> The $x$, the input features, are fed into the model to generate a prediction $f_{w,b}​(x)$
+
+
+2. For linear regression, if you find parameters $w$ and $b$ so that $J(w,b)$ is very close to zero, what can you conclude?
+
++ A. The selected values of the parameters $w$ and $b$ cause the algorithm to fit the training set really well.
++ B. This is never possible -- there must be a bug in the code.
++ C. The selected values of the parameters $w$ and $b$ cause the algorithm to fit the training set really poorly.
+
+My Answer: A
+
+> [!check] Correct
+> When the cost is small, this means that the model fits the training set well.
+
 
 ## Train the model with gradient descent
 
@@ -347,8 +398,44 @@ ___
 ___
 ***Optional lab: Gradient descent***
 
-> [!hint] Code
-> E:\Github\Zcode\Li\Notes\MachineLearning\GradientDescent.ipynb
+[Gradient descent](W1/C1_W1_Lab04_Gradient_Descent_Soln.ipynb)
+
+## Practice quiz: Train the model with gradient descent
+
+1. Gradient descent is an algorithm for finding values of parameters w and b that minimize the cost function J.
+
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/9d6af8aa-0910-478f-b535-192f5c901014image3.png?expiry=1698451200000&hmac=Eg48V4-tYqXcLeBnh8Y5eKUJ4v_1rdoQJKaB2SMBB78)
+
+When $\frac{\partial J(w,b)}{\partial w}$ is a negative number (less than zero), what happens to $w$ after one update step?
+
++ A. $w$ decreases
++ B. $w$ increases.
++ C. $w$ stays the same
++ D. It is not possible to tell if $w$ will increase or decrease.
+
+My Answer: D
+
+> [!failure] Incorrect
+> 
+> Whether $w$ increases or decreases depends upon whether the derivative is positive or negative.
+
+> Answer: $w$ increases
+
+> [!check] Correct
+> 
+> The learning rate is always a positive number, so if you take W minus a negative number, you end up with a new value for W that is larger (more positive).
+
+
+2. For linear regression, what is the update step for parameter b?
+
++ A. $$b=b-\alpha\frac{1}{m}\sum_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})$$
++ B. $$b=b-\alpha\frac1m\sum_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})x^{(i)}$$
+
+My Answer: A
+
+> [!check] Correct
+> 
+> The update step is $b=b-\alpha\frac{\partial J(w,b)}{\partial w}$ where $\frac{\partial J(w,b)}{\partial b}$​ can be computed with this expression: $\sum\limits_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})$
 
 # Week2 Regression with multiple input variables
 
@@ -461,8 +548,7 @@ An alternative to gradient descent
 ___
 Optional Lab: multiple linear regression
 
-> [!hint] Code
-> E:\Github\Zcode\Li\Notes\MachineLearning\MultipleLinearRegression.ipynb
+[multiple linear regression](W2/C1_W2_Lab02_Multiple_Variable_Soln.ipynb)
 
 ## Practice quiz: Multiple linear regression
 
@@ -471,6 +557,10 @@ Optional Lab: multiple linear regression
 
 My answer: 30
 
+> [!check] Correct
+> 
+> Yes! $x_{4}^{(3)}$​ is the 4th feature (4th column in the table) of the 3rd training example (3rd row in the table).
+
 2. Which of the following are potential benefits of vectorization? Please choose the bestoption.
 + A It makes your code run faster
 + B It can make your code shorter
@@ -478,6 +568,10 @@ My answer: 30
 + D All ofthe above 
 
 My answer: D $\checkmark[ChatGPT]$
+
+> [!check] Correct
+> 
+> Correct! All of these are benefits of vectorization!
 
 3. True/False? To make gradient descent converge about twice as fast, a technique that almost always works is to double the learning rate alpha.
 
@@ -490,6 +584,10 @@ My answer: False $\checkmark[ChatGPT]$
 > The learning rate is a hyperparameter that determines the size of the steps taken during each iteration of gradient descent. If you increase the learning rate too much, it can lead to overshooting the minimum of the cost function, causing the algorithm to diverge rather than converge. On the other hand, if the learning rate is too small, it may lead to slow convergence.
 > 
 > Choosing the right learning rate is often a process of experimentation and fine-tuning. There are more sophisticated techniques, such as learning rate schedules and adaptive learning rate methods, that can help gradient descent converge faster without the need to blindly double the learning rate.
+
+> [!check] Correct
+> 
+> Doubling the learning rate may result in a learning rate that is too large, and cause gradient descent to fail to find the optimal values for the parameters $w$ and $b$.
 
 ## Gradient descent in practice
 
@@ -555,8 +653,7 @@ ___
 ***Optional Lab: Feature scaling and learning rate***
 
 
-> [!hint] Code
-> E:\Github\Zcode\Li\Notes\MachineLearning\FeatureScalingandLearningRate.ipynb
+[Feature scaling and learning rate](W2/C1_W2_Lab03_Feature_Scaling_and_Learning_Rate_Soln.ipynb)
 
 ___
 ***Feature engineering***
@@ -588,11 +685,12 @@ ___
 ___
 ***Optionallab: Feature engineering and Polynomial regression***
 
-> [!hint] Code
-> E:\Github\Zcode\Li\Notes\MachineLearning\FeatureEngineeringandPolynomialRegression.ipynb
+[Feature engineering and Polynomial regression](W2/C1_W2_Lab04_FeatEng_PolyReg_Soln.ipynb)
 
 ___
 ***Optionallab: Linear regression with scikit-learn***
+
+[Linear regression with scikit-learn](W2/C1_W2_Lab05_Sklearn_GD_Soln.ipynb)
 
 [scikit-learn](https://scikit-learn.org/stable/)
 
@@ -604,6 +702,9 @@ Which of the following is a valid step used during feature scaling?
 + Add the mean (average) from each value and and then divide by the (max - min).
 + Subtract the mean (average) from each value and then divide by the (max - min). ==My answer== $\checkmark[ChatGPT]$
 
+> [!check] Correct
+> 
+> This is called mean normalization.
 
 2. Suppose a friend ran gradient descent three separate times with three choices of the learning rate a and plotted the learning curves for each (cost J for each iteration).
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/91035b73-148b-4f43-be79-695519301becimage4.png?expiry=1694908800000&hmac=92wVq1ACH4SJ7d_ZrscWsEJPMcUxJySFAYxLdKkXv6A)
@@ -614,17 +715,32 @@ For which case,A or B, was the learning rate a likely too large?
 + case A only
 + case B only ==My answer== $\checkmark[ChatGPT]$
 
+> [!check] Correct
+> 
+> The cost is increasing as training continues, which likely indicates that the learning rate alpha is too large.
+
 3. Of the circumstances below, for which one is feature scaling particularly helpful?
 + Feature scaling is helpful when one feature is much larger (or smaller) than another feature. ==My answer== $\checkmark[ChatGPT]$
 + Feature scaling is helpful when all the features in the original data (before scaling is applied) range from 0 to 1.
 
-4. You are helping a grocery store predict its revenue, and have data on its items sold perweek, and price per item. What could be a useful engineered feature?
+> [!check] Correct
+> 
+> For example, the “house size” in square feet may be as high as 2,000, which is much larger than the feature “number of bedrooms” having a value between 1 and 5 for most houses in the modern era.
+
+
+1. You are helping a grocery store predict its revenue, and have data on its items sold perweek, and price per item. What could be a useful engineered feature?
 + For each product, calculate the number ofitems sold **divided** by the price per item.
 + For each product, calculate the number of items sold **times** price per item. ==My answer== $\checkmark[ChatGPT]$
 
-5. True/False? With polynomial regression, the predicted values f_w,b(x) does notnecessarily have to be a straight line (or linear) function of the input feature x.
+> [!check] Correct
+> This feature can be interpreted as the revenue generated for each product.
+
+2. True/False? With polynomial regression, the predicted values f_w,b(x) does notnecessarily have to be a straight line (or linear) function of the input feature x.
 + True  ==My answer== $\checkmark[ChatGPT]$
 + False
+
+> [!check] Correct
+> A polynomial function can be non-linear.  This can potentially help the model to fit the training data better.
 
 > [!NOTE] ChatGPT
 > True. With polynomial regression, the predicted values f(w, b, x) do not necessarily have to be a straight line or linear function of the input feature x. Polynomial regression allows for modeling relationships between the dependent variable (the predicted values) and the independent variable (the input feature) using polynomial functions of different degrees.
@@ -637,7 +753,7 @@ For which case,A or B, was the learning rate a likely too large?
 
 ## Week 2 practice lab: Linear regression
 
-can not access
+[Linear regression](W2_2/C1_W2_Linear_Regression.ipynb)
 
 # Week3 Classification
 
@@ -731,6 +847,8 @@ P(y=0)+P(y=1)=1
 ___
 ***Optional lab: Sigmoid function and logistic regression***
 
+[Sigmoid function and logistic regression](W3/C1_W3_Lab02_Sigmoid_function_Soln.ipynb)
+
 ___
 ***Decision boundary***
 
@@ -752,8 +870,7 @@ ___
 ___
 ***Optional lab: Decision boundary***
 
-> [!hint] Code
-> E:\Github\Zcode\Li\Notes\MachineLearning\ClassificationwithLogisticRegression.ipynb
+[Decision boundary](W3/C1_W3_Lab03_Decision_Boundary_Soln.ipynb)
 
 
 ## Practice quiz: Classification with logistic regression
@@ -765,6 +882,10 @@ ___
 
 My Answer: A $\checkmark[ChatGPT]$
 
+> [!check] Correct
+> 
+> This task predicts one of two classes, malignant or not malignant.
+
 2. Recall the sigmoid function is $g(z)=\frac{1}{1+e^{-z}}$
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/d60aeff4-f74f-459c-b70d-9c06c64458d7image3.png?expiry=1695168000000&hmac=O_GDG7DtW4K0gbCEphHfpxX5MJVsRHsVgVKxjQJTd-4)
 lf z is a large positive number, then:
@@ -774,6 +895,10 @@ lf z is a large positive number, then:
 + $g(z)$ will be near zero (0)
 
 My Answer: B $\checkmark[ChatGPT]$
+
+> [!check] Correct
+> 
+> Say $z=+100$. So $e^{-z}$ is then $e^{-100}$,  a really small positive number. So $g(z)=\frac{1}{1+\mathrm{a~small~positive~number}}$ which is close to $1$
 
 3. A cat photo classification model predicts lif it's a cat,and 0 if it's not a cat For a particular photograph, the logistic regression model outputs $g(z)$ (a number between 0 and 1). Which of these would be a reasonable criteria to decide whether to predict if it's a cat?
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/d60aeff4-f74f-459c-b70d-9c06c64458d7image2.png?expiry=1695168000000&hmac=qV1VEyB8OHh8jPp7auOHNTCN5GhCZdWFSbiEzOMT0iE)
@@ -785,10 +910,17 @@ My Answer: B $\checkmark[ChatGPT]$
 
 My Answer: C $\checkmark[ChatGPT]$
 
+> [!check] Correct
+> 
+> Think of g(z) as the probability that the photo is of a cat. When this number is at or above the threshold of 0.5, predict that it is a cat.
+
 4. True/False? No matter what features you use (including if you use polynomial features), the decision boundary learned by logistic regression will be a linear decision boundary.
 
 My Answer: False $\checkmark[ChatGPT]$
 
+> [!check] Correct
+> 
+> The decision boundary can also be non-linear, as described in the lectures.
 ## Cost function for logistic regression
 
 ***Cost function for logistic regression***
@@ -796,7 +928,6 @@ My Answer: False $\checkmark[ChatGPT]$
 ![](./images/Pasted%20image%2020230918205529.png)
 
 **Squared error cost**
-
 $$
 J(\vec{w},b)=\dfrac{1}{m}\sum_{i=1}^{m}\dfrac{1}{2}(f_{\vec{w},b}(\vec{x}^{(i)})-y^{(i)})^{2}
 $$
@@ -828,6 +959,8 @@ $$L\big(f_{\vec{w},b}\big(\vec{x}^{(i)}\big),y^{(i)}\big)=\begin{cases}\quad-\lo
 ___
 ***Optional lab: Logistic loss***
 
+[Logistic loss](W3/C1_W3_Lab04_LogisticLoss_Soln.ipynb)
+
 ___
 ***Simplified Cost Function for Logistic Regression***
 
@@ -837,8 +970,7 @@ ___
 ___
 ***Optional lab: Cost function for logistic regression***
 
-> [!hint] Code
-> E:\Github\Zcode\Li\Notes\MachineLearning\CostFunctionForLogisticRegression.ipynb
+[Cost function for logistic regression](W3/C1_W3_Lab05_Cost_Function_Soln.ipynb)
 
 ## Practice quiz: Cost function for logistic regression
 
@@ -859,6 +991,10 @@ My Answer: A $\checkmark[ChatGPT]$
 > 
 > So, for a single training example, the answer is "Loss."
 
+> [!check] Correct
+> 
+> In these lectures, loss is calculated on a single training example. It is worth noting that this definition is not universal. Other lecture series may have a different definition.
+
 2. For the simplified loss function, if the label $y^{(i)} = 0$, then what does this expression simplify to?
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/30800c78-5d39-4239-a323-c65b911d1bfcimage3.png?expiry=1695254400000&hmac=oJ3uPZVuUErPSJoVb8rJ4Fj3FD5jRyH0Bnaw_UiR_qo)
 + $-\log(1-f_{\vec{w},b}(X^{(i)}))$
@@ -867,6 +1003,11 @@ My Answer: A $\checkmark[ChatGPT]$
 + $\log(1-f_{\vec{w},b}(X^{(i)}))+\log(1-f_{\vec{w},b}(X^{(i)}))$
 
 My Answer: A $\checkmark[ChatGPT]$
+
+> [!check] Correct
+> 
+> When $y^{(I)}=0$, the first term reduces to zero.
+
 
 ## Gradient descent for logistic regression
 
@@ -888,11 +1029,13 @@ $P(y=1|\vec{x};\vec{w},b)$
 ___
 ***Optional lab: Gradient descent for logistic regression***
 
-> [!hint] Code
-> E:\Github\Zcode\Li\Notes\MachineLearning\GradientDescentforLogistic.ipynb
+[Gradient descent for logistic regression](W3/C1_W3_Lab06_Gradient_Descent_Soln.ipynb)
 
 ___
 ***Optional lab: Logistic regression with scikit-learn***
+
+[Logistic regression with scikit-learn](W3/C1_W3_Lab07_Scikit_Learn_Soln.ipynb)
+
 ## Practice quiz: Gradient descent for logistic regression
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/Tv99olQhR7K_faJUIbeyDQ_61ca3d07977d46b4aec7eae43554bca1_Screen-Shot-2022-06-29-at-8.41.24-PM.png?expiry=1695254400000&hmac=ZPfSjAE6nAO_14MgiXneUkhBGuiR8YiyhRONkoKz43w)
@@ -902,6 +1045,9 @@ Which of the following two statements is a more accurate statement about gradien
 
 My Answer: A $\checkmark[ChatGPT]$
 
+> [!check] Correct
+> 
+> For logistic regression, $f_{\vec{w},b}(X^{(i)})$ is the sigmoid function instead of a straight line.
 
 ## The problem of overfitting
 
@@ -969,6 +1115,8 @@ ___
 ___
 ***Optional lab: Overfitting***
 
+[Overfitting](W3/C1_W3_Lab08_Overfitting_Soln.ipynb)
+
 ___
 ***Cost function with regularization***
 
@@ -1010,18 +1158,13 @@ How to get the derivative term (optional)
 ![](./images/Pasted%20image%2020230919204629.png)
 
 > [!question] Quiz
-> 
 > Recall the gradient descent algorithm utilizes the gradient calculation:
-> 
-> $$
-> \begin{aligned}
+> $$\begin{aligned}
 > \text{repeat until convergence: \{} \\
 > w_{j}=w_{j}-\alpha\Bigg[\frac{1}{m}\sum_{i=1}^{m}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)})x_{j}^{(i)}+\frac{\lambda}{m}w_{j}\Bigg]& \mathrm{for~j=1..n}  \\
 > b=b-\alpha\frac{1}{m}\sum_{i=0}^{m-1}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}) \\
 > \}
-> \end{aligned}
-> $$
-> 
+> \end{aligned}$$
 > Where each iteration performs simultaneous updates on $w_j$​ for all $j$.
 > 
 > In lecture, this was rearranged to emphasize the impact of regularization:
@@ -1059,8 +1202,7 @@ ___
 ___
 ***Optional lab: Regularization***
 
-> [!hint] Code
-> E:\Github\Zcode\Li\Notes\MachineLearning\OverfittingandRegularization.ipynb
+[Regularization](W3/C1_W3_Lab09_Regularization_Soln.ipynb)
 
 ## Practice quiz: The problem of overfitting
 
@@ -1071,6 +1213,12 @@ ___
 + Apply regularization
 
 My Answer: A, C, D $\checkmark[ChatGPT]$
+
+> [!check] Correct
+> 
+> + A If the model trains on the more relevant features, and not on the less useful features, it may generalize better to new examples.
+> + C If the model trains on more data, it may generalize better to new examples.
+> + D Regularization is used to reduce overfitting.
 
 2. You fit logistic regression with polynomial features to a dataset, and your model looks like this
 
@@ -1084,6 +1232,10 @@ What would you conclude? (Pick one)
 
 My Answer: C $\checkmark[ChatGPT]$
 
+> [!check] Correct
+> 
+> The model has high variance (it overfits the training data). Adding data (more training examples) can help.
+
 3. Suppose you have a regularized linear regression model, lf you increase the regularization parameter $\lambda$, what do you expect to happen to the parameters $w_1, w_2, ..., w_n$?
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/ujk9ltT9RAC5PZbU_YQALQ_7bc73e8e2f3a48cf800d1a504f55ecf1_Screen-Shot-2022-06-14-at-3.38.02-PM.png?expiry=1695254400000&hmac=W_VhMnTrsqsY55VnZtuY62Ht56ibA7-eomw1YiYMBN0)
@@ -1093,9 +1245,13 @@ My Answer: C $\checkmark[ChatGPT]$
 
 My Answer: A $\checkmark[ChatGPT]$
 
+> [!check] Correct
+> 
+> Regularization reduces overfitting by reducing the size of the parameters $w_1​,w_2​,...w_n$​.
+
 ## Week 3 practice lab: logistic regression
 
-Unavailable
+[practice lab: logistic regression](W3_2/C1_W3_Logistic_Regression.ipynb)
 
 ## Conversations with Andrew (Optional)
 
@@ -1121,3 +1277,7 @@ Unavailable
 ## Acknowledgments
 
 <font  face="Times New Roman" color=green size=5><u>2023-09-20 15:53 $\Uparrow$</u></font>
+
+Check Quiz Answer
+
+<font  face="Times New Roman" color=green size=5><u>2023-10-26 17:50 $\Uparrow$</u></font>
