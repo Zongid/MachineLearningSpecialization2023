@@ -95,7 +95,7 @@ Unsupervised learning
 ---
 ***Jupyter Notebooks***
 
-[Jupyter Notebooks](W1/C1_W1_Lab01_Python_Jupyter_Soln.ipynb)
+[Jupyter Notebooks](C1W1/C1_W1_Lab01_Python_Jupyter_Soln.ipynb)
 
 ## Practice Quiz: Supervised vs unsupervised learning
 
@@ -122,7 +122,7 @@ Unsupervised learning
 ___
 ***Optionallab: Model representation***
 
-[Model representation](W1/C1_W1_Lab02_Model_Representation_Soln.ipynb)
+[Model representation](C1W1/C1_W1_Lab02_Model_Representation_Soln.ipynb)
 
 ***
 ***Cost function formula***
@@ -204,7 +204,7 @@ ___
 ___
 ***Optionallab: Cost function***
 
-[Cost function](W1/C1_W1_Lab03_Cost_function_Soln.ipynb)
+[Cost function](C1W1/C1_W1_Lab03_Cost_function_Soln.ipynb)
 
 ## Practice Quiz: Regression Model
 
@@ -398,7 +398,7 @@ ___
 ___
 ***Optional lab: Gradient descent***
 
-[Gradient descent](W1/C1_W1_Lab04_Gradient_Descent_Soln.ipynb)
+[Gradient descent](C1W1/C1_W1_Lab04_Gradient_Descent_Soln.ipynb)
 
 ## Practice quiz: Train the model with gradient descent
 
@@ -548,7 +548,7 @@ An alternative to gradient descent
 ___
 Optional Lab: multiple linear regression
 
-[multiple linear regression](W2/C1_W2_Lab02_Multiple_Variable_Soln.ipynb)
+[multiple linear regression](C1W2/C1_W2_Lab02_Multiple_Variable_Soln.ipynb)
 
 ## Practice quiz: Multiple linear regression
 
@@ -653,7 +653,7 @@ ___
 ***Optional Lab: Feature scaling and learning rate***
 
 
-[Feature scaling and learning rate](W2/C1_W2_Lab03_Feature_Scaling_and_Learning_Rate_Soln.ipynb)
+[Feature scaling and learning rate](C1W2/C1_W2_Lab03_Feature_Scaling_and_Learning_Rate_Soln.ipynb)
 
 ___
 ***Feature engineering***
@@ -685,12 +685,12 @@ ___
 ___
 ***Optionallab: Feature engineering and Polynomial regression***
 
-[Feature engineering and Polynomial regression](W2/C1_W2_Lab04_FeatEng_PolyReg_Soln.ipynb)
+[Feature engineering and Polynomial regression](C1W2/C1_W2_Lab04_FeatEng_PolyReg_Soln.ipynb)
 
 ___
 ***Optionallab: Linear regression with scikit-learn***
 
-[Linear regression with scikit-learn](W2/C1_W2_Lab05_Sklearn_GD_Soln.ipynb)
+[Linear regression with scikit-learn](C1W2/C1_W2_Lab05_Sklearn_GD_Soln.ipynb)
 
 [scikit-learn](https://scikit-learn.org/stable/)
 
@@ -847,7 +847,7 @@ P(y=0)+P(y=1)=1
 ___
 ***Optional lab: Sigmoid function and logistic regression***
 
-[Sigmoid function and logistic regression](W3/C1_W3_Lab02_Sigmoid_function_Soln.ipynb)
+[Sigmoid function and logistic regression](C1W3/C1_W3_Lab02_Sigmoid_function_Soln.ipynb)
 
 ___
 ***Decision boundary***
@@ -870,7 +870,7 @@ ___
 ___
 ***Optional lab: Decision boundary***
 
-[Decision boundary](W3/C1_W3_Lab03_Decision_Boundary_Soln.ipynb)
+[Decision boundary](C1W3/C1_W3_Lab03_Decision_Boundary_Soln.ipynb)
 
 
 ## Practice quiz: Classification with logistic regression
@@ -959,7 +959,7 @@ $$L\big(f_{\vec{w},b}\big(\vec{x}^{(i)}\big),y^{(i)}\big)=\begin{cases}\quad-\lo
 ___
 ***Optional lab: Logistic loss***
 
-[Logistic loss](W3/C1_W3_Lab04_LogisticLoss_Soln.ipynb)
+[Logistic loss](C1W3/C1_W3_Lab04_LogisticLoss_Soln.ipynb)
 
 ___
 ***Simplified Cost Function for Logistic Regression***
@@ -970,7 +970,7 @@ ___
 ___
 ***Optional lab: Cost function for logistic regression***
 
-[Cost function for logistic regression](W3/C1_W3_Lab05_Cost_Function_Soln.ipynb)
+[Cost function for logistic regression](C1W3/C1_W3_Lab05_Cost_Function_Soln.ipynb)
 
 ## Practice quiz: Cost function for logistic regression
 
@@ -1029,12 +1029,12 @@ $P(y=1|\vec{x};\vec{w},b)$
 ___
 ***Optional lab: Gradient descent for logistic regression***
 
-[Gradient descent for logistic regression](W3/C1_W3_Lab06_Gradient_Descent_Soln.ipynb)
+[Gradient descent for logistic regression](C1W3/C1_W3_Lab06_Gradient_Descent_Soln.ipynb)
 
 ___
 ***Optional lab: Logistic regression with scikit-learn***
 
-[Logistic regression with scikit-learn](W3/C1_W3_Lab07_Scikit_Learn_Soln.ipynb)
+[Logistic regression with scikit-learn](C1W3/C1_W3_Lab07_Scikit_Learn_Soln.ipynb)
 
 ## Practice quiz: Gradient descent for logistic regression
 
@@ -1115,7 +1115,7 @@ ___
 ___
 ***Optional lab: Overfitting***
 
-[Overfitting](W3/C1_W3_Lab08_Overfitting_Soln.ipynb)
+[Overfitting](C1W3/C1_W3_Lab08_Overfitting_Soln.ipynb)
 
 ___
 ***Cost function with regularization***
@@ -1202,7 +1202,7 @@ ___
 ___
 ***Optional lab: Regularization***
 
-[Regularization](W3/C1_W3_Lab09_Regularization_Soln.ipynb)
+[Regularization](C1W3/C1_W3_Lab09_Regularization_Soln.ipynb)
 
 ## Practice quiz: The problem of overfitting
 
