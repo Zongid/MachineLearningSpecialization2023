@@ -1169,8 +1169,8 @@ $+\frac{\lambda}{2m}b^2$: makes very little difference in practice
 
 ![](./images/Pasted%20image%2020230919174004.png)
 
-+ $\lambda$: too small$\rightarrow$overfit
-+ $\lambda$: too large$\rightarrow$underfit
++ $\lambda$: too small $\rightarrow$ overfit
++ $\lambda$: too large $\rightarrow$ underfit
 
 ![](./images/Pasted%20image%2020230919174856.png)
 
