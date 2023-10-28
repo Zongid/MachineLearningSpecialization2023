@@ -1299,7 +1299,7 @@ My Answer: A $\checkmark[ChatGPT]$
 
 ## Week 3 practice lab: logistic regression
 
-[practice lab: logistic regression](W3_2/C1_W3_Logistic_Regression.ipynb)
+[practice lab: logistic regression](C1W3_2/C1_W3_Logistic_Regression.ipynb)
 
 ## Conversations with Andrew (Optional)
 
