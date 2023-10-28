@@ -165,18 +165,25 @@ ___
 ***Cost function intuition***
 
 model:
+
 $$
 f_{w,b}(x)=wx+b
 $$
+
 parameters:
+
 $$
 w,b
 $$
+
 cost function:
+
 $$
 J(w,b)=\frac{1}{2m}\sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2
 $$
+
 goal:
+
 $$
 \underset{w,b}{\operatorname*{minimize}} J(w,b)
 $$
@@ -187,6 +194,7 @@ simplified: $b=\varnothing$
 ![](./images/Pasted%20image%2020230912221139.png)
 
 > [!question] Quiz
+> 
 > When does the model fit the data relatively well, compared to other choices for parameter $w$?
 > + ==When the cost $J$ is at or near a minimum.==$\checkmark$
 > + When $f_w​(x)$ is at or near a minimum for all the values of x in the training set.
@@ -194,6 +202,7 @@ simplified: $b=\varnothing$
 > + When $w$ is close to zero.
 > 
 > > 正确  
+> > 
 > > When the cost is relatively small, closer to zero, it means the model fits the data better compared to other choices for w and b.
 
 ___
@@ -227,11 +236,13 @@ Which of the following are the inputs, or features, that are fed into the model 
 My Answer: D ×
 
 > [!failure] Incorrect
+> 
 > Although $x$ are the input features, $y$ are the labels. The model does not use the labels to make its predictions.
 
 A. $x$
 
 > [!check] Correct
+> 
 > The $x$, the input features, are fed into the model to generate a prediction $f_{w,b}​(x)$
 
 
@@ -244,6 +255,7 @@ A. $x$
 My Answer: A
 
 > [!check] Correct
+> 
 > When the cost is small, this means that the model fits the training set well.
 
 
@@ -292,6 +304,7 @@ Simultaneously update $w$ and $b$
 
 
 > [!question] Quiz
+> 
 > ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/n7JrkYmhTLyya5GJoay8ww_d56fe65b44c84abe8f84e42eaf9223a1_w1l3ivq_4.png?expiry=1694736000000&hmac=-yq1d98Dnt0OLz4Xe5ZQWSLjaycccz2-0Ut_4rZvJyo)
 > 
 > Gradient descent is an algorithm for finding values of parameters w and b that minimize the cost function J. What does this update statement do? (Assume α is small.)
@@ -309,6 +322,7 @@ ___
 ***Gradient descent intuition***
 
 Gradient descent algorithm
+
 $$
 \begin{align}
 \text{repeat until convergence}: \{ \\
@@ -321,6 +335,7 @@ $$
 ![](./images/Pasted%20image%2020230913174137.png)
 
 > [!question] Quiz
+> 
 > ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/RMPXvf4aS1-D173-GptfPA_43480abfcdf44ba98b75ddb917a1aca1_w1l3ivq_5.png?expiry=1694736000000&hmac=Jxu6XsNMCMZO7CY21Y-bdYdMSziK8N3hpLGv7eq7QxE)
 > 
 > Gradient descent is an algorithm for finding values of parameters w and b that minimize the cost function J.
@@ -378,6 +393,7 @@ b=b-\alpha \frac{\partial}{\partial b} J(w,b) \\
 > $$
 > \frac{\partial}{\partial w} J(w,b)=\frac{1}{m}\sum_{i=1}^{m}(f_{w,b}(x^{(i)})-y^{(i)})x^{(i)}
 > $$
+> 
 > $$
 > \frac{\partial}{\partial b} J(w,b)=\frac{1}{m}\sum_{i=1}^{m}(f_{w,b}\big(x^{(i)}\big)-y^{(i)}\big)
 > $$
@@ -488,6 +504,7 @@ $f_{w,b}(x)=w_{1}x_{1}+w_{2}x_{2}+\cdots+w_{n}x_{n}+b$
 $$f_{\overrightarrow{W},b}(\vec{X})=\vec{W}\cdot\vec{X}+b=w_{1}x_{1}+w_{2}x_{2}+w_{3}x_{3}+\cdots+w_{n}x_{n}+b$$
 
 > [!question] Quiz
+> 
 > In the training set below, what is $x_1^{(4​)}$? Please type in the number below (this is an integer such as 123, no decimal points).
 > ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/d-rtZ04RRgSq7WdOEYYEEg_33981fdca69e48538e967e4f3d7449a1_w2l1ivq_1.png?expiry=1694736000000&hmac=Snz2Zz9uHXBFVhBqHLiZBvEKlq4QJHx25YpgtmqZRII)
 > 
@@ -620,6 +637,7 @@ standard deviation $\sigma$
 
 
 > [!question] Quiz
+> 
 > ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/Xh5QR3GGSrmeUEdxhuq5Jg_6ad4808a655f46a4a7c21e866dfe2da1_Screen-Shot-2022-06-15-at-11.41.33-AM.png?expiry=1694822400000&hmac=DiDop-b6T1bhYo-Ke1leGu0EdrgkiJm1ofu9uZ9U5rI)
 > 
 > Which of the following is a valid step used during feature scaling? 
@@ -645,6 +663,7 @@ ___
 ![](./images/Pasted%20image%2020230914212753.png)
 
 > [!question] Quiz
+> 
 > ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/HJXHo_ccQ3qVx6P3HGN6Ww_8b5aa55079da4da29504bd23ca6cf5a1_Screen-Shot-2022-06-15-at-11.46.52-AM.png?expiry=1694822400000&hmac=1xr7XsXl3n4z2t-xiDXu1tyj042hORbaDe5yrEwRB68)
 > You run gradient descent for 15 iterations with $α=0.3$ and compute $J(w)$ after each iteration. You find that the value of $J(w)$ increases over time.  How do you think you should adjust the learning rate $α$?
 > + Keep running it for additional iterations
@@ -671,6 +690,7 @@ Feature engineering: Using <font color="#ffc000">intuition</font> to design <fon
 
 
 > [!question] Quiz
+> 
 > ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/DygYeH6_SnKoGHh-v8pydQ_50a8d6e730a349a2af49d92f98fd80a1_Screen-Shot-2022-06-15-at-11.56.00-AM.png?expiry=1694908800000&hmac=YoWi5CPz-5UacRWevt-QVOhPkm1dAoI9tLZjht9XVlA)
 > 
 > If you have measurements for the dimensions of a swimming pool (length, width, height), which of the following two would be a more useful engineered feature?
@@ -840,6 +860,7 @@ $f_{\vec{\mathrm{w}},b}(\vec{\mathrm{x}})=P(\mathbf{y}=1|\vec{\mathrm{x}};\vec{\
 P(y=0)+P(y=1)=1
 
 > [!question] Quiz
+> 
 > ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/yJ-DMkC1T8efgzJAtb_HFA_3a3b7a7266ce488db279c09724a8fdf1_Screen-Shot-2022-06-11-at-12.40.39-PM.png?expiry=1695168000000&hmac=oRpYZFYb8RH5Pm_Li3e3b4Jxvlj9DojQRoscFXTNBxk)
 > Recall the sigmoid function is $g(z)=\frac1{1+e^{-z}}$
 > 
@@ -865,6 +886,7 @@ ___
 ![](./images/Pasted%20image%2020230918185456.png)
 
 > [!question] Quiz
+> 
 > Let’s say you are creating a tumor detection algorithm. Your algorithm will be used to flag potential tumors for future inspection by a specialist. What value should you use for a threshold?
 > 
 > + High, say a threshold of 0.9? $\times$
@@ -954,6 +976,7 @@ $$L\big(f_{\vec{w},b}\big(\vec{x}^{(i)}\big),y^{(i)}\big)=\begin{cases}\quad-\lo
 
 
 > [!question] Quiz
+> 
 > Why is the squared error cost not used in logistic regression?
 > 
 > + ==The non-linear nature of the model results in a “wiggly”, non-convex cost function with many potential local minima.== $\checkmark$
@@ -1069,6 +1092,7 @@ Classification
 ![](./images/Pasted%20image%2020230919170220.png)
 
 > [!question] Quiz
+> 
 > Our goal when creating a model is to be able to use the model to predict outcomes correctly for **new examples**. A model which does this is said to **generalize** well. 
 > 
 > When a model fits the training data well but does not work well with new examples that are not in the training set, this is an example of:
@@ -1110,6 +1134,7 @@ ___
 > 	- "Regularization"
 
 > [!question] Quiz
+> 
 > Applying regularization, increasing the number of training examples, or selecting a subset of the most relevant features are methods for…
 > 
 > + ==Addressing overfitting (high variance)== $\checkmark$
@@ -1143,6 +1168,7 @@ $+\frac{\lambda}{2m}b^2$: makes very little difference in practice
 ![](./images/Pasted%20image%2020230919174856.png)
 
 > [!question] Quiz
+> 
 > For a model that includes the regularization parameter $λ$ (lambda), increasing $λ$ will tend to…
 > 
 > + Increases the size of the parameters $w_1,w_2,...,w_n$
@@ -1165,19 +1191,26 @@ How to get the derivative term (optional)
 ![](./images/Pasted%20image%2020230919204629.png)
 
 > [!question] Quiz
+> 
 > Recall the gradient descent algorithm utilizes the gradient calculation:
+> 
 > $$\begin{aligned}
 > \text{repeat until convergence: \{} \\
 > w_{j}=w_{j}-\alpha\Bigg[\frac{1}{m}\sum_{i=1}^{m}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)})x_{j}^{(i)}+\frac{\lambda}{m}w_{j}\Bigg]& \mathrm{for~j=1..n}  \\
 > b=b-\alpha\frac{1}{m}\sum_{i=0}^{m-1}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}) \\
 > \}
 > \end{aligned}$$
+> 
 > Where each iteration performs simultaneous updates on $w_j$​ for all $j$.
 > 
 > In lecture, this was rearranged to emphasize the impact of regularization:
+> 
 > $$w_j=w_j-\alpha\left[\frac{1}{m}\sum_{i=1}^m(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)})x_j^{(i)}+\frac{\lambda}{m}w_j\right]\quad\text{for j}=1..\text{n}$$
+> 
 > is rearranged to be:
+> 
 > $$w_j=w_j\underbrace{{\left(1-\alpha\frac\lambda m\right)}}_{NewPart}-\underbrace{\alpha\frac1m\sum_{i=1}^m(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)})x_j^{(i)}}_{OriginalPart}\quad\mathrm{for~j=1..n}$$
+> 
 > Assuming $α$, the learning rate, is a small number like 0.001, $λ$ is 1, and $m=50$, what is the effect of the 'new part' on updating $w_j$​?
 > + ==The new part decreases the value of $w_j$​ each iteration by a little bit.== $\checkmark$
 > 
@@ -1196,6 +1229,7 @@ ___
 ![](./images/Pasted%20image%2020230919214454.png)
 
 > [!question] Quiz
+> 
 > ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/Db_hva8mTr-_4b2vJi6_Pg_4a4c3dd4f61c46b4827391bd6d724cf1_Screen-Shot-2022-06-11-at-7.12.34-PM.png?expiry=1695254400000&hmac=YX2p1BujBaFRFHoUgCCRFUUoA0DRBPBBEmp6I3-FWpk)
 > For regularized **logistic** regression, how do the gradient descent update steps compare to the steps for linear regression?
 > 
