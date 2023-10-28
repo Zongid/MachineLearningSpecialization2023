@@ -131,12 +131,14 @@ Model: $f_{w,b}(x)=wx+b$
 > $w,b$: parameters/coefficients/weights
 
 Cost function: Squared error cost function
+
 $$
 \begin{align}
 J(w,b)&=\frac{1}{2m}\sum_{i=1}^{m} \left( \hat{y}^{(i)} - y^{(i)} \right)^2 \\
 &=\frac{1}{2m}\sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2 \\
 \end{align}
 $$
+
 > m=number of training examples
 
 ![](./images/Pasted%20image%2020230912221233.png)
@@ -147,7 +149,7 @@ $$
 > J(w,b)=\frac{1}{2m}\sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2
 > $$
 > Which of these are the parameters of the model that can be adjusted?
-> + ==$w$ and $b$== $\checkmark$
+> + == $w$ and $b$== $\checkmark$
 > + $f_{w,b}(x^{(i)})$
 > + $w$ only, because we should choose $b$=0
 > + $\hat{y}$
