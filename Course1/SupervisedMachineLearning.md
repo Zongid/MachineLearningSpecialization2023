@@ -196,7 +196,7 @@ simplified: $b=\varnothing$
 > [!question] Quiz
 > 
 > When does the model fit the data relatively well, compared to other choices for parameter $w$?
-> + ==When the cost $J$ is at or near a minimum.==$\checkmark$
+> + ==When the cost $J$ is at or near a minimum.== $\checkmark$
 > + When $f_w​(x)$ is at or near a minimum for all the values of x in the training set.
 > + When $x$ is at or near a minimum.
 > + When $w$ is close to zero.
@@ -354,7 +354,7 @@ $$
 > + w stays the same
 > + It is not possible to tell if $w$ will increase or decrease.
 > + $w$ increases
-> + ==$w$ decreases.== $\checkmark$
+> + == $w$ decreases.== $\checkmark$
 > 
 > 正确
 > 
@@ -451,8 +451,13 @@ My Answer: D
 
 2. For linear regression, what is the update step for parameter b?
 
-+ A. $$b=b-\alpha\frac{1}{m}\sum_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})$$
-+ B. $$b=b-\alpha\frac1m\sum_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})x^{(i)}$$
++ A. 
+
+$$b=b-\alpha\frac{1}{m}\sum_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})$$
+
++ B. 
+
+$$b=b-\alpha\frac1m\sum_{i=1}^m(f_{w,b}(x^{(i)})-y^{(i)})x^{(i)}$$
 
 My Answer: A
 
@@ -491,7 +496,7 @@ Multiple features(variables)
 
 Model:
 
-Previously: $$f_{w,b}(x)=wx+b$$
+Previously: $f_{w,b}(x)=wx+b$
 
 $f_{w,b}(x)=w_{1}x_{1}+w_{2}x_{2}+\cdots+w_{n}x_{n}+b$
 
@@ -839,6 +844,7 @@ ___
 ![](./images/Pasted%20image%2020230918143955.png)
 
 Interpretation of logistic regression output
+
 $$
 f_{\vec{w},b}(\vec{x})=\frac{1}{1+e^{-(\vec{w}\cdot\vec{x}+b)}}
 $$
@@ -867,7 +873,7 @@ P(y=0)+P(y=1)=1
 > If $z$ is a large negative number then:
 > 
 > + $g(z)$ is near negative  one (-1)
-> + ==$g(z)$ is near zero== $\checkmark$
+> + == $g(z)$ is near zero== $\checkmark$
 > 
 > Correct
 > Say $z$=-100. $e^{-z}$ is then $e^{100}$, a really big positive number. So, $g(z)=\frac1{1+\text{a big positive number}}$ or about $0$
@@ -957,6 +963,7 @@ My Answer: False $\checkmark[ChatGPT]$
 ![](./images/Pasted%20image%2020230918205529.png)
 
 **Squared error cost**
+
 $$
 J(\vec{w},b)=\dfrac{1}{m}\sum_{i=1}^{m}\dfrac{1}{2}(f_{\vec{w},b}(\vec{x}^{(i)})-y^{(i)})^{2}
 $$
