@@ -320,11 +320,8 @@ When developing a learning algorithm (choosing features, etc.), making decisions
 + Fit model $p(x)$ on training set $x(1),x(2),...,x(m)$
 + On a cross validation/test example $x$, predict
 
-$$y=\begin{cases}1&if\ p(x)<\varepsilon(anomaly) \\ 0&if\ p(x)\geq\varepsilon(normal)\end{cases}$$
+$$y=\begin{cases}1&ifp(x)<\varepsilon(anomaly)\\0&ifp(x)\geq\varepsilon(normal)\end{cases}$$
 
-$$\begin{equation}y=\begin{cases}1&ifp(x)<\varepsilon(anomaly)\\0&ifp(x)\geq\varepsilon(normal)\end{cases}\end{equation}$$
-
-\[y=\begin{cases}1&ifp(x)<\varepsilon(anomaly)\\0&ifp(x)\geq\varepsilon(normal)\end{cases}\]
 
 + Possible evaluation metrics:
 	- True positive, false positive, false negative, true negative
