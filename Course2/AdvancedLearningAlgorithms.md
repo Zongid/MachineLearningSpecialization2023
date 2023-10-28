@@ -43,7 +43,7 @@ ___
 + Used in the 1980's and early 1990's
 + Fell out of favor in the late 1990's.
 + Resurgence from around 2005
-+ speech$\rightarrow$images$\rightarrow$text(NLP)$\rightarrow$...
++ speech $\rightarrow$ images $\rightarrow$ text(NLP) $\rightarrow$ ...
 
 ![](./images/Pasted%20image%2020230920175622.png)
 ![](./images/Pasted%20image%2020230920180034.png)
@@ -57,7 +57,7 @@ ___
 
 ![](./images/Pasted%20image%2020230920181502.png)
 
-Price, shipping cost, maketing, material$\Rightarrow$affordability, awareness and percived quality$\Rightarrow$probability of being a top seller
+Price, shipping cost, maketing, material $\Rightarrow$ affordability, awareness and percived quality $\Rightarrow$ probability of being a top seller
 
 ***activations***: the degree that the biological neuron is sending a high output or sending many electrical impulses to other neurons to the downstream from it. 
 
@@ -122,8 +122,11 @@ ___
 ![](./images/Pasted%20image%2020230920213847.png)
 
 > [!question] Quiz
+> 
 > Can you fill in the superscripts and subscripts for the second neuron?
+> 
 > ![img](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/mrRWkOajSr-0VpDmo2q_CA_748d8f1e177b4af3a252415f8a08b3f1_mls-c2-w1-l2-s02-ivq.png?expiry=1695340800000&hmac=ZSDDmaAmrnZBzePBlA113bNTwoxxjpQYjz8q_gjYj6w)
+> 
 > + $a_2^{[3]}=g(\vec{w}_2^{[3]}\cdot\vec{a}^{[2]}+b_2^{[3]})$ $\checkmark$
 > + $a_2^{[3]}=g(\vec{w}_2^{[3]}\cdot\vec{a}^{[3]}+b_2^{[3]})$
 > + $a_2^{[3]}=g(\vec{w}_2^{[3]}\cdot a_2^{[2]}+b_2^{[3]})$
@@ -144,6 +147,7 @@ ___
 ![](./images/Pasted%20image%2020230920215832.png)
 
 > [!NOTE] Note
+> 
 > **a pretty typical choice**: the number of hidden units **decreases** as you get **closer** to the **output layer**
 
 ___
@@ -152,7 +156,7 @@ ___
 
 ## Practice quiz: Neural network model
 
-<font  face="Times New Roman" color=green size=5><u>2023-10-26 17:56 $\downarrow$</u></font>
+<font  face="Times New Roman" color=green size=5><u>2023-10-26 17:56 $\downarrow$ </u></font>
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/5f7ddfc8-51f8-4824-8be3-b9710fa4f466image3.png?expiry=1698451200000&hmac=UlFk58pQDpGW4UZVAzBdG6hhOaaQb6BLxr6cNNkyDoc)
 
@@ -171,7 +175,7 @@ My Answer: A
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/5f7ddfc8-51f8-4824-8be3-b9710fa4f466image4.png?expiry=1698451200000&hmac=S0iNfcNrxer2AySyBkGl8hnFM9_s3Zfmxt1zBEwJxGM)
 
-2. For the handwriting recognition task discussed in lecture, what is the output $a_1^{[3]}$​?
+2. For the handwriting recognition task discussed in lecture, what is the output $a_1^{[3]}$ ​?
 
 + A. A vector of several numbers that take values between 0 and 1
 + B. The estimated probability that the input image is of a number 1, a number that ranges from 0 to 1.
@@ -189,7 +193,7 @@ My Answer: B
 ___
 ***Inference in Code***
 
-<font  face="Times New Roman" color=green size=5><u>2023-09-22 14:00 $\downarrow$</u></font>
+<font  face="Times New Roman" color=green size=5><u>2023-09-22 14:00 $\downarrow$ </u></font>
 
 One of the remarkable things about neural networks is the same algorithm can be applied to so many different applications. 
 
@@ -219,7 +223,9 @@ layer_1 = Dense(units=3, activation="sigmoid")
 layer_2 = Dense(units=1, activation="sigmoid")
 model = Aequential([layer_1, layer_2])
 ```
+
 $$\Downarrow$$
+
 ```python
 model = Sequential([
 	Dense(units=3, activation="sigmoid"),
@@ -315,6 +321,7 @@ ___
 My Answer: A $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Correct. Use the numpy.dot function to take the dot product. The sigmoid function shown in lecture can be a function that you write yourself (see course 1, week 3 of this specialization), and that will be provided to you in this course.
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/38b928e9-0b01-456d-9549-be803e348303image1.png?expiry=1695513600000&hmac=gYmaQhXcbGRqEPLuq9BVcr2XPi-jG0bqitoqqKeUWvw)
@@ -326,6 +333,7 @@ My Answer: A $\checkmark[ChatGPT]$
 My Answer: B $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Correct. The w parameters of neuron 1 are in column 1. The w parameters of neuron 2 are in column 2, and so on.
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/38b928e9-0b01-456d-9549-be803e348303image1.png?expiry=1695513600000&hmac=gYmaQhXcbGRqEPLuq9BVcr2XPi-jG0bqitoqqKeUWvw)
@@ -339,6 +347,7 @@ My Answer: B $\checkmark[ChatGPT]$
 My Answer: B $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Yes! For each neuron in the layer, there is one column in the numpy array W. The for loop calculates the activation value for each neuron. So if there are 3 columns in W, there are 3 neurons in the dense layer, and therefore the for loop goes through 3 iterations (one for each neuron).
 
 ## Speculations on artificial general intelligence (AGl)
@@ -361,7 +370,7 @@ ___
 ___
 ***Matrix multiplication***
 
-<font  face="Times New Roman" color=green size=5><u>2023-09-23 16:37 $\downarrow$</u></font>
+<font  face="Times New Roman" color=green size=5><u>2023-09-23 16:37 $\downarrow$ </u></font>
 
 **Dot products**
 
@@ -380,7 +389,7 @@ ___
 ___
 ***Matrix multiplication rules***
 
-<font  face="Times New Roman" color=green size=5><u>2023-09-24 14:08 $\downarrow$</u></font>
+<font  face="Times New Roman" color=green size=5><u>2023-09-24 14:08 $\downarrow$ </u></font>
 
 **Matrix multiplication rules**
 
@@ -508,6 +517,7 @@ For which type of task would you use the binary cross entropy loss function?
 My Answer: D $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Yes! Binary cross entropy, which we've also referred to as logistic loss, is used for classifying between two classes (two categories).
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/141c2e0d-b88f-4876-a375-6b18af36255fimage3.png?expiry=1695859200000&hmac=uDPjpGiddV_QQyUkVGdevPwvxR-yAEtgHyBIq21YjCA)
@@ -534,6 +544,7 @@ Which line of code updates the network parameters in order to reduce the cost?
 My Answer: C $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Yes! The third step of model training is to train the model on data in order to minimize the loss (and the cost)
 
 ## Activation Functions
@@ -557,6 +568,7 @@ ___
 **Output layer**
 
 > [!NOTE] Note
+> 
 > Binary classification $\rightarrow$ Sigmoid  
 > Regression problem $\rightarrow$ different activation function
 
@@ -603,6 +615,7 @@ ___
 My Answer: ReLU $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Yes! A ReLU is most often used because it is faster to train compared to the sigmoid. This is because the ReLU is only flat on one side (the left side) whereas the sigmoid goes flat (horizontal, slope approaching zero) on both sides of the curve.
 
 
@@ -616,6 +629,7 @@ My Answer: ReLU $\checkmark[ChatGPT]$
 My Answer: ReLU, linear $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > + Yes! ReLU outputs values 0 or greater, and housing prices are positive values.
 > + Yes! A linear activation function can be used for a regression task where the output can be both negative and positive, but it's also possible to use it for a task where the output is 0 or greater (like with house prices).
 
@@ -625,6 +639,7 @@ My Answer: ReLU, linear $\checkmark[ChatGPT]$
 + ChatGPT Answer: True $[ChatGPT]$
 
 > [!check] Correct
+> 
 > Yes! A neural network with many layers but no activation function is not effective. A linear activation is the same as "no activation function".
 
 ## Multiclass Classification
@@ -747,6 +762,7 @@ ___
 My Answer: C $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Yes! The sum of all the softmax activations should add up to 1. One way to see this is that if $e^{z_1}=10,e^{z_2}=20,e^{z_3}=30$, then the sum of $a_1​+a_2​+a_3$​ is equal to $\frac{e^{z_1}+e^{z_2}+e^{z_3}}{e^{z_1}+e^{z_2}+e^{z_3}}$​​ which is 1.
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/f38d2d9d-5e70-4900-bd84-baf812439294image4.png?expiry=1695859200000&hmac=ujX0xj2v-LRcKoy6DDvUnG_tE1RtqOYYaLPrxvSDEwU)
@@ -760,6 +776,7 @@ My Answer: C $\checkmark[ChatGPT]$
 My Answer: B $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Correct. When the true label is 3, then the cross entropy loss for that training example is just the negative of the log of the activation for the third neuron of the softmax. All other terms of the cross entropy loss equation $(-log(a_1),-log(a_2),and-log(a_4))$ are ignored
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/f38d2d9d-5e70-4900-bd84-baf812439294image5.png?expiry=1695859200000&hmac=KikwpRdx35zukULGTtEcIuN1fFv-QhFFP885V8C72VI)
@@ -773,6 +790,7 @@ My Answer: B $\checkmark[ChatGPT]$
 + Correct Answer: B
 
 > [!failure] Incorrect
+> 
 > Feedback: When you set from_logits=True, then it expects the output layer of the model to be 'linear' (logits), because the loss function calculates the softmax itself with a more numerically stable method.
 
 > [!check] B Correct
@@ -826,6 +844,7 @@ ___
 My Answer: C $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Correct. Set the optimizer to Adam.
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/b08fec87-b710-4ece-9022-9dcf48ab1305image4.png?expiry=1695859200000&hmac=pu1-1SJLSQCCTqEDC3vypfIiSSwJkl0IQsjH0apzE0c)
@@ -839,6 +858,7 @@ My Answer: C $\checkmark[ChatGPT]$
 My Answer: A ???
 
 > [!check] Correct
+> 
 > Correct. For a convolutional layer, each neuron takes as input a subset of the vector that is fed into that layer.
 
 ## Back Propagation (Optional)
@@ -1012,14 +1032,19 @@ ___
 > The name **cross-validation** refers to that this is an extra dataset that we're going to use to check or cross check the validity or really the accuracy of different models.
 
 Training error:
+
 $$
 J_{train}(\vec{w},b)=\frac{1}{2m_{train}}\biggl[\sum_{i=1}^{m_{train}}\bigl(f_{\vec{w},b}\bigl(\vec{x}^{(i)}\bigr)-y^{(i)}\bigr)^{2}\biggr]
 $$
+
 Cross validation error, validation error, dev error:
+
 $$
 J_{cv}(\vec{w},b)=\frac{1}{2m_{cv}}\biggl[\sum_{i=1}^{m_{cv}}\Bigl(f_{\vec{w},b}\left(\vec{x}_{cv}^{(i)}\right)-y_{cv}^{(i)}\Bigr)^{2}\biggr]
 $$
+
 Test error:
+
 $$
 J_{test}(\vec{w},b)=\frac{1}{2m_{test}}\biggl[\sum_{i=1}^{m_{test}}\biggl(f_{\vec{w},b}\left(\vec{x}_{test}^{(i)}\right)-y_{test}^{(i)}\biggr)^{2}\biggr]
 $$
@@ -1033,6 +1058,7 @@ $$
 ![](./images/Pasted%20image%2020230927181845.png)
 
 > [!NOTE] Notes
+> 
 > Training set $\rightarrow$ dev set: pick model that has the lowest cross validation error $\rightarrow$ test set: an estimate of the generalization error
 
 ___
@@ -1056,6 +1082,7 @@ My Answer: D
 ChatGPT Answer: A
 
 > [!check] A Correct
+> 
 > Yes! A diagnostic is a test that you run to gain insight into what is/isn’t working with a learning algorithm, to gain guidance into improving its performance.
 
 2. True/False? lt is always true that the better an algorithm does on the training set, the better it will do on generalizing to new data.
@@ -1063,6 +1090,7 @@ ChatGPT Answer: A
 My Answer: False $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Actually, if a model overfits the training set, it may not generalize well to new data.
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/392a50a6-14d1-40c4-9a21-b1f12202c20fimage3.png?expiry=1695945600000&hmac=aZEvXpt2tdNXDmy8BuDb7dxQnegE86LObKcMTxCTTEE)
@@ -1076,6 +1104,7 @@ My Answer: False $\checkmark[ChatGPT]$
 My Answer: C $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Correct. Use the cross validation set to calculate the cross validation error on all three models in order to compare which of the three models is best.
 
 
@@ -1150,6 +1179,7 @@ ___
 **Debugging a learning algorithm**
 
 You've implemented regularized linear regression on housing prices
+
 $$
 J({\vec{w}},b)={\frac{1}{2m}}\sum_{i=1}^{m}\bigl(f_{{\vec{w}},b}\bigl({\vec{x}}^{(i)}\bigr)-y^{(i)}\bigr)^{2}+{\frac{\lambda}{2m}}\sum_{j=1}^{n}w_{j}^{2}
 $$
@@ -1208,6 +1238,7 @@ ___
 My Answer: C $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > When $J_{cv}​>>J_{train}$​ (whether $J_{train}$​ is also high or not, this is a sign that the model is overfitting to the training data and performing much worse on new examples.
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/0597681e-6ccc-4f13-bd62-6c322925cf90image3.png?expiry=1696118400000&hmac=TWsmLLooVr_rZBA2ez0zVM6xNHFxRm94MHNY0zobsag)
@@ -1223,6 +1254,7 @@ My Answer: D
 CHatGPT Answer: B ×
 
 > [!check] D Correct
+> 
 > D. Compare the training error to the baseline level of performance
 > 
 > Correct. If comparing your model's training error to a baseline level of performance (such as human level performance, or performance of other well-established models), if your model's training error is much higher, then this is a sign that the model has high bias (has underfit).
@@ -1240,6 +1272,7 @@ My Answer: AB
 ChatGPT Answer: AD
 
 > [!check] Correct
+> 
 > + Collect additional features or add polynomial features
 > > Correct. More features could potentially help the model better fit the training examples.
 > 
@@ -1257,6 +1290,7 @@ My Answer: AC
 ChatGPT Answer: AD ×
 
 > [!check] Correct
+> 
 > + Collect more training data
 > > Yes, the model appears to have high variance (overfit), and collecting more training examples would help reduce high variance.
 > 
@@ -1400,6 +1434,7 @@ Deepfakes
 My Answer: A $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Correct. By identifying similar types of errors, you can collect more data that are similar to these misclassified examples in order to train the model to improve on these types of examples.
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/25ef86da-6935-47cf-a4af-8945fa6a0ed2image3.png?expiry=1696204800000&hmac=3AU5akUuupk60yMEeeiBKozG2XzVx5YFf13lz-S8bxE)
@@ -1413,6 +1448,7 @@ My Answer: A $\checkmark[ChatGPT]$
 My Answer: B $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Yes! Modifying existing data (such as images, or audio) is called data augmentation.
 
 
@@ -1427,10 +1463,13 @@ My Answer: B $\checkmark[ChatGPT]$
 My Answer: CD 
 
 > [!check] Correct
+> 
 > + You can choose to train all parameters of the model, including the output layers, as well as the earlier layers.
+> 
 > > Correct. It may help to train all the layers of the model on your own training set. This may take more time compared to if you just trained the parameters of the output layers.
 > 
 > + You can choose to train just the output layers' parameters and leave the other parameters of the model fixed.
+> 
 > > Correct. The earlier layers of the model may be reusable as is, because they are identifying low level features that are relevant to your task.
 
 
@@ -1518,6 +1557,7 @@ ___
 My Answer: Cat
 
 > [!check] Correct
+> 
 > Correct. If you follow the floppy ears to the right, and then from the whiskers decision node, go left because whiskers are present, you reach a leaf node for "cat", so the model would predict that this is a cat.
 
 
@@ -1532,6 +1572,7 @@ My Answer: Cat
 My Answer: B
 
 > [!check] Correct
+> 
 > Yes!
 
 ## Decision tree learning
@@ -1639,6 +1680,7 @@ At a given node of a decision tree,  6 of 10 examples are cats and 4 of 10 are n
 My Answer: C
 
 > [!check] Correct
+> 
 > Correct. The expression is $-(p_1)log_2(p_1)-(p_0)log_2(p_0)$
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/f1fed11a-1ade-4b8c-b5cf-e6f9b11a2b23image2.png?expiry=1696464000000&hmac=m0UDiA1-OuBLRQdWBPlGV858NN3srI5jXLomFdpFiNc)
@@ -1657,6 +1699,7 @@ Before a split, the entropy of a group of 5 cats and 5 non-cats is $H(5/10)$. Af
 My Answer: D $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > Correct. The general expression is $H(p_1^{root})-\left(w^{left}H(p_1^{left})+w^{right}H(p_1^{right})\right)$
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/f1fed11a-1ade-4b8c-b5cf-e6f9b11a2b23image5.png?expiry=1696464000000&hmac=m6trgSDIuq3KD2FIZpMRc1u3XOYmnQ3ejuSFCjDH7M4)
@@ -1670,6 +1713,7 @@ My Answer: D $\checkmark[ChatGPT]$
 My Answer: C
 
 > [!check] Correct
+> 
 > Yes! 0 is used to represent the absence of that feature (not pointy, not floppy), and 1 is used to represent the presence of that feature (oval).
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/f1fed11a-1ade-4b8c-b5cf-e6f9b11a2b23image6.png?expiry=1696464000000&hmac=dTBy3n2Tp7scUbMHryiuldznT1v2KLHpvyyzZrOJZ3I)
@@ -1683,9 +1727,11 @@ My Answer: C
 My Answer: C
 
 > [!failure] Incorrect
+> 
 > C Incorrect
 
 > [!check] Correct Answer
+> 
 > D.   Choose the 9 mid-points between the 10 examples as possible splits, and find the split that gives the highest information gain.
 > 
 > Correct. This is what is proposed in the lectures.
@@ -1700,6 +1746,7 @@ My Answer: C
 My Answer: AD $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > + When the tree has reached a maximum depth
 > + When the number of examples in a node is below a threshold
 
@@ -1841,6 +1888,7 @@ My Answer: B
 My Answer: A
 
 > [!check] Correct
+> 
 > Yes!
 
 3. What does sampling with replacement refer to?
@@ -1852,9 +1900,11 @@ My Answer: A
 My Answer: D
 
 > [!failure] Incorrect
+> 
 > D Incorrect
 
 > [!check] Correct Answer
+> 
 > Drawing a sequence of examples where, when picking the next example, first replacing all previously drawn examples into the set we are picking from.
 
 ## Practice Lab: Decision Trees
