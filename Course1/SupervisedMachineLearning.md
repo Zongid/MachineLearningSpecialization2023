@@ -29,7 +29,7 @@ Learning Objectives
 - Implement gradient descent
 - Optimize a regression model using gradient descent
 
-<font  face="Times New Roman" color=green size=5><u>2023-09-11$\downarrow$</u></font>
+<font  face="Times New Roman" color=green size=5><u>2023-09-11 $\downarrow$ </u></font>
 
 ## Overview of Machine Learning
 
@@ -38,10 +38,12 @@ Learning Objectives
 ***What is machine learning?***
 
 > If Arthur Samuel's checkers-playing program had been allowed to play only 10 games (instead of tens of thousands games) against itself, how would this have affected its performance?
+> 
 > + Would have made it better
-> + ==Would have made it worse==$\checkmark$
+> + ==Would have made it worse== $\checkmark$
 
 Machine learning algorithms
+
 - Supervised learning
 - Unsupervised learning
 - Recommender systems
@@ -144,10 +146,13 @@ $$
 ![](./images/Pasted%20image%2020230912221233.png)
 
 > [!question] Quiz
+> 
 > The cost function used for linear regression is 
+> 
 > $$
 > J(w,b)=\frac{1}{2m}\sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2
 > $$
+> 
 > Which of these are the parameters of the model that can be adjusted?
 > + == $w$ and $b$== $\checkmark$
 > + $f_{w,b}(x^{(i)})$
