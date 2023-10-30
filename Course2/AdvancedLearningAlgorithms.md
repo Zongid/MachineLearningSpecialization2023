@@ -110,7 +110,7 @@ ___
 
 ![](./images/Pasted%20image%2020230920210823.png)
 
-> \[<font color=red>2</font>\]: a quantity associated with layer <font color=red>2</font> of the neural network
+> [<font color=red>2</font>]: a quantity associated with layer <font color=red>2</font> of the neural network
 
 ![](./images/Pasted%20image%2020230920211609.png)
 ![](./images/Pasted%20image%2020230920211903.png)
@@ -156,7 +156,7 @@ ___
 
 ## Practice quiz: Neural network model
 
-<font  face="Times New Roman" color=green size=5><u>2023-10-26 17:56 $\downarrow$ </u></font>
+<font  face="Times New Roman" color=green size=5> <ins>2023-10-26 17:56 $\downarrow$ </ins> </font>
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/5f7ddfc8-51f8-4824-8be3-b9710fa4f466image3.png?expiry=1698451200000&hmac=UlFk58pQDpGW4UZVAzBdG6hhOaaQb6BLxr6cNNkyDoc)
 
