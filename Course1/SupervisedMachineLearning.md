@@ -185,7 +185,7 @@ $$
 goal:
 
 $$
-\underset{w,b}{\operatorname*{minimize}} J(w,b)
+\underset{w,b}{\text{minimize}} J(w,b)
 $$
 
 simplified: $b=\varnothing$
@@ -266,7 +266,7 @@ My Answer: A
 the most advanced neural network models/Deep learning models
 
 + Have some function $J(w,b)$
-+ Want $\underset{w,b}{\operatorname*{min}}(w,b)$
++ Want $\underset{w,b}{\text{min}}(w,b)$
 + Outline: 
 	- Start with xome $w,b$
 	- Keep changing $w,b$ to reduce $J(w,b)$
@@ -325,9 +325,12 @@ Gradient descent algorithm
 
 $$
 \begin{align}
-\text{repeat until convergence}: \{ \\
-w=w-\alpha\frac{\partial}{\partial w}J(w,b) \\
-b=b-\alpha\frac{\partial}{\partial b}J(w,b) \\
+\text{repeat until convergence}: \{
+\\
+w=w-\alpha\frac{\partial}{\partial w}J(w,b) 
+\\
+b=b-\alpha\frac{\partial}{\partial b}J(w,b) 
+\\
 \}
 \end{align}
 $$
@@ -384,9 +387,12 @@ $$J(w,b)=\frac{1}{2m}\sum_{i=1}^{m}\left(f_{w,b}(x^{(i)}-y^{(i)} \right)^2$$
 + Gradient descent algorithm
 
 $$\begin{align}
-\text{repeat until convergence } \{ \\
-w=w-\alpha \frac{\partial}{\partial w} J(w,b) \\
-b=b-\alpha \frac{\partial}{\partial b} J(w,b) \\
+\text{repeat until convergence } \{ 
+\\
+w=w-\alpha \frac{\partial}{\partial w} J(w,b) 
+\\
+b=b-\alpha \frac{\partial}{\partial b} J(w,b) 
+\\
 \}
 \end{align}$$
 
@@ -1203,8 +1209,10 @@ How to get the derivative term (optional)
 > 
 > $$\begin{aligned}
 > \text{repeat until convergence: \{} \\
-> w_{j}=w_{j}-\alpha\Bigg[\frac{1}{m}\sum_{i=1}^{m}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)})x_{j}^{(i)}+\frac{\lambda}{m}w_{j}\Bigg]& \mathrm{for~j=1..n}  \\
-> b=b-\alpha\frac{1}{m}\sum_{i=0}^{m-1}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}) \\
+> w_{j}=w_{j}-\alpha\Bigg[\frac{1}{m}\sum_{i=1}^{m}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)})x_{j}^{(i)}+\frac{\lambda}{m}w_{j}\Bigg]& \mathrm{for~j=1..n}  
+> \\
+> b=b-\alpha\frac{1}{m}\sum_{i=0}^{m-1}(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}) 
+> \\
 > \}
 > \end{aligned}$$
 > 
