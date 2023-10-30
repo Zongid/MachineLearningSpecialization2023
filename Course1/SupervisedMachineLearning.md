@@ -97,10 +97,11 @@ Unsupervised learning
 ---
 ***Jupyter Notebooks***
 
+Lab: Python and Jupyter Notebooks
+
 [Jupyter Notebooks](C1W1/C1_W1_Lab01_Python_Jupyter_Soln.ipynb)
 
 ## Practice Quiz: Supervised vs unsupervised learning
-
 
 
 
@@ -122,7 +123,7 @@ Unsupervised learning
 ![](./images/Pasted%20image%2020230912205512.png)
 
 ___
-***Optionallab: Model representation***
+***Optional lab: Model representation***
 
 [Model representation](C1W1/C1_W1_Lab02_Model_Representation_Soln.ipynb)
 
@@ -838,8 +839,7 @@ class=category
 ___
 ***Optional lab: Classification***
 
-%% + http://t.csdn.cn/NVWAY
-+ VSCode-MachineLearning.ipynb %%
+[Optional lab: Classification](C1W3/C1_W3_Lab01_Classification_Soln.ipynb)
 
 ___
 ***Logistic regression***
