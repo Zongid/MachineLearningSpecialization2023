@@ -682,10 +682,11 @@ My Answer: B $\checkmark[ChatGPT]$
 
 > [!check] Correct Answer
 > 
-> $\begin{aligned}
-> y_{norm}(i,j)& =y(i,j)-\mu_i\quad\text{where}  \\
+> $$\begin{aligned}
+> y_{norm}(i,j)& =y(i,j)-\mu_i\quad\text{where}  
+> \\
 > \mu_{i}& =\frac1{\sum_jr(i,j)}\sum_{j:r(i,j)=1}y(i,j) 
-> \end{aligned}$
+> \end{aligned}$$
 > 
 > This is the mean normalization algorithm described in lecture. This will result in a zero average value on a per-row basis.
 
