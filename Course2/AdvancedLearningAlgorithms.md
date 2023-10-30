@@ -418,7 +418,8 @@ ___
 
 $$A=\begin{bmatrix}1&-1&0.1\\2&-2&0.2\end{bmatrix}\quad A^T=\begin{bmatrix}1&2\\-1&-2\\0.1&0.2\end{bmatrix}$$
 
-$$W=\begin{bmatrix}3&5&7&9\\4&6&8&0\end{bmatrix}$$
+$$W=\begin{bmatrix}3&5&7&9\\
+4&6&8&0\end{bmatrix}$$
 
 $$Z=A^TW=\begin{bmatrix}11&17&23&9\\-11&-17&-23&-9\\1.1&1.7&2.3&0.9\end{bmatrix}$$
 
