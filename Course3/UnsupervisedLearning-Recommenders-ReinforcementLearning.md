@@ -1356,7 +1356,7 @@ ___
 ![](./images/Pasted%20image%2020231015204921.png)
 ![](./images/Pasted%20image%2020231015205118.png)
 ___
-***Algorithm refinement: $\epsilon$-greedy policy***
+***Algorithm refinement: $\epsilon$ -greedy policy***
 
 **Learning Algorithm**
 
