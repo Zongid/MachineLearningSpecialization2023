@@ -83,7 +83,7 @@ ___
 + axon
 + neurons
 
-My Answer: A, B, D $\checkmark[ChatGPT\&ERNIE\ Bot]$
+My Answer: A, B, D $\checkmark[ChatGPT&ERNIE\ Bot]$
 
 > [!check] Correct
 > 
@@ -93,7 +93,7 @@ My Answer: A, B, D $\checkmark[ChatGPT\&ERNIE\ Bot]$
 
 2. True/False? Neural networks take inspiration from, but do not very accurately mimic, how neurons in a biological brain learn.
 
-My Answer: True  $\checkmark[ChatGPT\&ERNIE\ Bot]$
+My Answer: True  $\checkmark[ChatGPT&ERNIE\ Bot]$
 
 > True. [ChatGPT]
 > 
