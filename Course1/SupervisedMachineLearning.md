@@ -735,9 +735,9 @@ ___
 
 ## Practice quiz: Gradient descent in practice
 
-1. ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/91035b73-148b-4f43-be79-695519301becimage3.png?expiry=1694908800000&hmac=McXP9FEMlnzLtMNNPc0jO37ednV08JTa6ajpHX4qouo)
+![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/91035b73-148b-4f43-be79-695519301becimage3.png?expiry=1694908800000&hmac=McXP9FEMlnzLtMNNPc0jO37ednV08JTa6ajpHX4qouo)
 
-Which of the following is a valid step used during feature scaling?
+1. Which of the following is a valid step used during feature scaling?
 + Add the mean (average) from each value and and then divide by the (max - min).
 + Subtract the mean (average) from each value and then divide by the (max - min). ==My answer== $\checkmark[ChatGPT]$
 
@@ -767,14 +767,14 @@ For which case,A or B, was the learning rate a likely too large?
 > For example, the “house size” in square feet may be as high as 2,000, which is much larger than the feature “number of bedrooms” having a value between 1 and 5 for most houses in the modern era.
 
 
-1. You are helping a grocery store predict its revenue, and have data on its items sold perweek, and price per item. What could be a useful engineered feature?
+4. You are helping a grocery store predict its revenue, and have data on its items sold perweek, and price per item. What could be a useful engineered feature?
 + For each product, calculate the number ofitems sold **divided** by the price per item.
 + For each product, calculate the number of items sold **times** price per item. ==My answer== $\checkmark[ChatGPT]$
 
 > [!check] Correct
 > This feature can be interpreted as the revenue generated for each product.
 
-2. True/False? With polynomial regression, the predicted values f_w,b(x) does notnecessarily have to be a straight line (or linear) function of the input feature x.
+5. True/False? With polynomial regression, the predicted values f_w,b(x) does notnecessarily have to be a straight line (or linear) function of the input feature x.
 + True  ==My answer== $\checkmark[ChatGPT]$
 + False
 
