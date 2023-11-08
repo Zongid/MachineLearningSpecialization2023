@@ -49,6 +49,8 @@ Machine learning algorithms
 - Recommender systems
 - Reinforcement learning
 
+Pactical advice for applying learning algorithms
+
 ---
 ***Supervised learning***
 
@@ -84,6 +86,10 @@ Clustering
 Unsupervised learning
 + Data only comes with inputs x, but not output labels y.
 + Algorithm has to find <font color="#00b0f0">structure</font> in the data.
+
++ Clustering: Group similar data points together.
++ Anomaly detection: Find unusual data point.
++ Dimensionality reduction: Compress data using fewernumbers.
 
 > [!question] Quiz
 > 
