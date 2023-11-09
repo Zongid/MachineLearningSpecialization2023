@@ -148,6 +148,8 @@ J(w,b)&=\frac{1}{2m}\sum_{i=1}^{m} \left( \hat{y}^{(i)} - y^{(i)} \right)^2 \\
 \end{align}
 $$
 
+> 2: to make some of our later calculations look neater
+> 
 > m=number of training examples
 
 ![](./images/Pasted%20image%2020230912221233.png)
