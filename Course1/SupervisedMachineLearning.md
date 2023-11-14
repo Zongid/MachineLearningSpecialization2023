@@ -320,8 +320,8 @@ Simultaneously update $w$ and $b$
 > 
 > $w=w-\alpha\frac{\partial J(w,b)}{\partial w}$
 > 
-> + ==Checks whether $w$ is equal to $w-\alpha\frac{\partial J(w,b)}{\partial w}$== $\checkmark$
-> + Updates parameter $w$ by a small amount
+> + Checks whether $w$ is equal to $w-\alpha\frac{\partial J(w,b)}{\partial w}$
+> + ==Updates parameter $w$ by a small amount== $\checkmark$
 > 
 > 正确
 > 
