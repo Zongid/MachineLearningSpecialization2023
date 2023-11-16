@@ -647,9 +647,15 @@ Mean normalization
 
 ![](./images/Pasted%20image%2020230914203430.png)
 
+> $x_i=\frac{x_i-\mu(\text{average/mean})}{\text{maximum}-\text{minimum}}$
+
 Z-score normalization
 
 standard deviation $\sigma$
+
+> [!info] Standard Deviation
+> 
+> 标准差（_Standard Deviation_） ，数学术语，是离均差平方的算术平均数（即：方差）的算术平方根，用σ表示。
 
 ![](./images/Pasted%20image%2020230914203916.png)
 
