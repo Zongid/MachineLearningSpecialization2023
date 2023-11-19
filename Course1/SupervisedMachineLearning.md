@@ -735,6 +735,12 @@ ___
 
 ![](./images/Pasted%20image%2020230915201030.png)
 
+$\sqrt{x}$
+
+$f_{\vec{w},b}(x)=w_{1}x+w_{2}\sqrt{x}+b$
+
+what features to use? $\rightarrow$ course2
+
 ___
 ***Optionallab: Feature engineering and Polynomial regression***
 
