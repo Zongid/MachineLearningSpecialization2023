@@ -792,16 +792,19 @@ For which case,A or B, was the learning rate a likely too large?
 + For each product, calculate the number of items sold **times** price per item. ==My answer== $\checkmark[ChatGPT]$
 
 > [!check] Correct
+> 
 > This feature can be interpreted as the revenue generated for each product.
 
-5. True/False? With polynomial regression, the predicted values f_w,b(x) does notnecessarily have to be a straight line (or linear) function of the input feature x.
+5. True/False? With polynomial regression, the predicted values $f_{w,b}(x)$ does not necessarily have to be a straight line (or linear) function of the input feature x.
 + True  ==My answer== $\checkmark[ChatGPT]$
 + False
 
 > [!check] Correct
+> 
 > A polynomial function can be non-linear.  This can potentially help the model to fit the training data better.
 
 > [!NOTE] ChatGPT
+> 
 > True. With polynomial regression, the predicted values f(w, b, x) do not necessarily have to be a straight line or linear function of the input feature x. Polynomial regression allows for modeling relationships between the dependent variable (the predicted values) and the independent variable (the input feature) using polynomial functions of different degrees.
 > 
 > In polynomial regression, you can have equations like:
@@ -812,7 +815,7 @@ For which case,A or B, was the learning rate a likely too large?
 
 ## Week 2 practice lab: Linear regression
 
-[Linear regression](W2_2/C1_W2_Linear_Regression.ipynb)
+[Linear regression](C1W2_2/C1_W2_Linear_Regression.ipynb)
 
 # Week3 Classification
 
