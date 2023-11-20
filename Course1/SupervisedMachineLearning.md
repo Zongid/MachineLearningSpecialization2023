@@ -951,7 +951,9 @@ My Answer: A $\checkmark[ChatGPT]$
 > This task predicts one of two classes, malignant or not malignant.
 
 2. Recall the sigmoid function is $g(z)=\frac{1}{1+e^{-z}}$
+
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/d60aeff4-f74f-459c-b70d-9c06c64458d7image3.png?expiry=1695168000000&hmac=O_GDG7DtW4K0gbCEphHfpxX5MJVsRHsVgVKxjQJTd-4)
+
 lf z is a large positive number, then:
 + $g(z)$ is near negative one (-1)
 + $g(z)$ is near one (1)
@@ -964,7 +966,8 @@ My Answer: B $\checkmark[ChatGPT]$
 > 
 > Say $z=+100$. So $e^{-z}$ is then $e^{-100}$,  a really small positive number. So $g(z)=\frac{1}{1+\mathrm{a~small~positive~number}}$ which is close to $1$
 
-3. A cat photo classification model predicts lif it's a cat,and 0 if it's not a cat For a particular photograph, the logistic regression model outputs $g(z)$ (a number between 0 and 1). Which of these would be a reasonable criteria to decide whether to predict if it's a cat?
+3. A cat photo classification model predicts 1 if it's a cat, and 0 if it's not a cat. For a particular photograph, the logistic regression model outputs $g(z)$ (a number between 0 and 1). Which of these would be a reasonable criteria to decide whether to predict if it's a cat?
+
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/d60aeff4-f74f-459c-b70d-9c06c64458d7image2.png?expiry=1695168000000&hmac=qV1VEyB8OHh8jPp7auOHNTCN5GhCZdWFSbiEzOMT0iE)
 
 + Predict it is a cat if g(z) < 0.5
