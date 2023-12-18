@@ -153,6 +153,7 @@ ___
 ___
 ***Lab: Neurons and Layers***
 
+[Lab: Neurons and Layers](C2W1/C2_W1_Lab01_Neurons_and_Layers.ipynb)
 
 ## Practice quiz: Neural network model
 
