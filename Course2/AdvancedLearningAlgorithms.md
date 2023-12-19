@@ -264,7 +264,7 @@ My Answer: D $\checkmark[ChatGPT]$
 > 
 > Yes! Each call to the "Dense" function defines a layer of the neural network.
 
-2. How do you define the second layer ofa neural network that has 4 neurons and a sigmoid activation?
+2. How do you define the second layer of a neural network that has 4 neurons and a sigmoid activation?
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/98c635c3-33fc-4d9c-9af5-6f1f18da35aeimage2.png?expiry=1695513600000&hmac=pYSo2qqV4nq_UQmFeAB2gei_OmKpZPLB_uMAblN9mOc)
 
