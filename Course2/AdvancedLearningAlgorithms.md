@@ -609,6 +609,8 @@ example
 ___
 ***Lab: ReLU activation***
 
+[Lab: ReLU activation](C2W2/C2_W2_Relu.ipynb)
+
 ## Practice quiz: Activation Functions
 
 ![](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/abeab774-084a-4758-9d01-bc275c77c747image4.png?expiry=1695859200000&hmac=QsBtDQ78VtCZOW4Q2gxdA45T6gLBDK8yyMe5ZbU4zCY)
