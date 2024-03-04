@@ -1073,6 +1073,7 @@ $$
 ___
 ***Optional Lab: Model Evaluation and Selection***
 
+[Optional Lab: Model Evaluation and Selection](C2W3/C2W3_Lab_01_Model_Evaluation_and_Selection.ipynb)
 
 ## Practice quiz: Advice for applying machine learning
 
