@@ -1917,6 +1917,8 @@ My Answer: D
 > [!check] Correct Answer
 > 
 > Drawing a sequence of examples where, when picking the next example, first replacing all previously drawn examples into the set we are picking from.
+> 
+> 有放回抽样
 
 ## Practice Lab: Decision Trees
 
