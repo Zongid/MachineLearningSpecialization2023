@@ -1674,6 +1674,7 @@ ___
 ___
 ***Lab: Optional Lab: Decision Trees***
 
+[Optional Lab: Decision Trees](C2W4/C2_W4_Lab_01_Decision_Trees.ipynb)
 
 ## Practice quiz: Decision tree learning
 
